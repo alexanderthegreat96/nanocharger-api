@@ -1,0 +1,970 @@
+{
+	"info": {
+		"_postman_id": "2fea63c5-cead-4a3d-b261-64f1e43fd68a",
+		"name": "nanocharger-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4392485"
+	},
+	"item": [
+		{
+			"name": "locate",
+			"item": [
+				{
+					"name": "raw",
+					"item": [
+						{
+							"name": "raw",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "latitude",
+											"value": "62.25265450472472",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "25.743974453369567",
+											"type": "text"
+										},
+										{
+											"key": "distanceUnit",
+											"value": "km",
+											"type": "text"
+										},
+										{
+											"key": "radius",
+											"value": "15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/locate/raw",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"locate",
+										"raw"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "grouped",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "latitude",
+											"value": "62.25265450472472",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "25.743974453369567",
+											"type": "text"
+										},
+										{
+											"key": "distanceUnit",
+											"value": "km",
+											"type": "text"
+										},
+										{
+											"key": "radius",
+											"value": "15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/locate/raw/grouped",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"locate",
+										"raw",
+										"grouped"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by-raw",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "latitude",
+											"value": "62.25265450472472",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "25.743974453369567",
+											"type": "text"
+										},
+										{
+											"key": "distanceUnit",
+											"value": "km",
+											"type": "text"
+										},
+										{
+											"key": "radius",
+											"value": "15",
+											"type": "text"
+										},
+										{
+											"key": "companyId",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/locate/by-raw",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"locate",
+										"by-raw"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "locate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "latitude",
+									"value": "62.25265450472472",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "25.743974453369567",
+									"type": "text"
+								},
+								{
+									"key": "distanceUnit",
+									"value": "km",
+									"type": "text"
+								},
+								{
+									"key": "radius",
+									"value": "15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/locate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"locate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "grouped",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "latitude",
+									"value": "62.25265450472472",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "25.743974453369567",
+									"type": "text"
+								},
+								{
+									"key": "distanceUnit",
+									"value": "km",
+									"type": "text"
+								},
+								{
+									"key": "radius",
+									"value": "15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/locate/grouped",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"locate",
+								"grouped"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "by",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "latitude",
+									"value": "62.25265450472472",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "25.743974453369567",
+									"type": "text"
+								},
+								{
+									"key": "distanceUnit",
+									"value": "km",
+									"type": "text"
+								},
+								{
+									"key": "radius",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "companyId",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/locate/by",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"locate",
+								"by"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "companies",
+			"item": [
+				{
+					"name": "Retrieve all companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/companies/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store a company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "Another Company",
+									"type": "text"
+								},
+								{
+									"key": "parent_company_id",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/companies/31?company_name=Subcompany&parent_company_id=30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"31"
+							],
+							"query": [
+								{
+									"key": "company_name",
+									"value": "Subcompany"
+								},
+								{
+									"key": "parent_company_id",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/companies/33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"33"
+							],
+							"query": [
+								{
+									"key": "company_name",
+									"value": "Subcompany",
+									"disabled": true
+								},
+								{
+									"key": "parent_company_id",
+									"value": "30",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stations",
+			"item": [
+				{
+					"name": "All Stations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/stations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a station",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/stations/105",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"stations",
+								"105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a station",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Arpasu de jos Station",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "45.78015426343593",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "24.623000602892088",
+									"type": "text"
+								},
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Strada Principală Nr. 214",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/stations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a station",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/stations/131?name=Arpasu de jos Station Updated",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"stations",
+								"131"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Arpasu de jos Station Updated"
+								},
+								{
+									"key": "latitude",
+									"value": "123123123wdfsdf",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a station",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|nfGkYgmBGwvVmlcu2NM2teMjVtbJow6xwsY7ESI3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/stations/132",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"stations",
+								"132"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Arpasu de jos Station Updated",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "123123123wdfsdf",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "alexander",
+							"type": "text"
+						},
+						{
+							"key": "email1",
+							"value": "alexander@localhost.com1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "alexander",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"create"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('stations', function (Blueprint $table) {
             $table->id();
             $table->string('name',120);
-            $table->string('latitude', 200);
-            $table->string('longitude', 200);
+            $table->decimal('latitude', 10,8);
+            $table->decimal('longitude', 11,8);
             $table->integer('company_id');
             $table->text('address');
             $table->timestamps();

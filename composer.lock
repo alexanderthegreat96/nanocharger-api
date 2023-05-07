@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e6e7fe5fd9d19060838a2fee2857ca4",
+    "content-hash": "740b7fe5cabb939fee4cf876b7cdc818",
     "packages": [
+        {
+            "name": "alexanderthegreat96/debugger-utility-alpha",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexanderthegreat96/debugger-utility-alpha.git",
+                "reference": "c1c6f1ac3b100634dcc80c60db6c96bd5d6c98d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexanderthegreat96/debugger-utility-alpha/zipball/c1c6f1ac3b100634dcc80c60db6c96bd5d6c98d8",
+                "reference": "c1c6f1ac3b100634dcc80c60db6c96bd5d6c98d8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Alexanderthegreat96\\DebuggerUtilityAlpha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandru Lupaescu",
+                    "email": "alexandrulupaescu@gmail.com"
+                }
+            ],
+            "description": "Typo3 Debugger Utility Var Dumper port for every project",
+            "support": {
+                "issues": "https://github.com/alexanderthegreat96/debugger-utility-alpha/issues",
+                "source": "https://github.com/alexanderthegreat96/debugger-utility-alpha/tree/1.0.6"
+            },
+            "time": "2023-01-26T00:57:05+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -60,6 +103,52 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "caneara/axiom",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caneara/axiom.git",
+                "reference": "c96c97fcd0913a9b64f47f0ed63adc21543dabd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caneara/axiom/zipball/c96c97fcd0913a9b64f47f0ed63adc21543dabd2",
+                "reference": "c96c97fcd0913a9b64f47f0ed63adc21543dabd2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Axiom\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A package that provides a library of reusable Laravel validation rules.",
+            "homepage": "https://github.com/mattkingshott/axiom",
+            "keywords": [
+                "axiom",
+                "laravel",
+                "php",
+                "rules",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/caneara/axiom/issues",
+                "source": "https://github.com/caneara/axiom/tree/v3.2.1"
+            },
+            "time": "2021-03-25T12:05:06+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1703,6 +1792,79 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+            "name": "mjaschen/phpgeo",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mjaschen/phpgeo.git",
+                "reference": "b2e593cf1e9aceea36510158ddb80c7395a80d5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/b2e593cf1e9aceea36510158ddb80c7395a80d5a",
+                "reference": "b2e593cf1e9aceea36510158ddb80c7395a80d5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.6",
+                "vimeo/psalm": "^4.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Location\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Jaschen",
+                    "email": "mjaschen@gmail.com",
+                    "homepage": "https://www.marcusjaschen.de/"
+                }
+            ],
+            "description": "Simple Yet Powerful Geo Library",
+            "homepage": "https://phpgeo.marcusjaschen.de/",
+            "keywords": [
+                "Polygon",
+                "area",
+                "bearing",
+                "bounds",
+                "calculation",
+                "coordinate",
+                "distance",
+                "earth",
+                "ellipsoid",
+                "geo",
+                "geofence",
+                "gis",
+                "gps",
+                "haversine",
+                "length",
+                "perpendicular",
+                "point",
+                "polyline",
+                "projection",
+                "simplify",
+                "track",
+                "vincenty"
+            ],
+            "support": {
+                "docs": "https://phpgeo.marcusjaschen.de/Installation.html",
+                "email": "mjaschen@gmail.com",
+                "issues": "https://github.com/mjaschen/phpgeo/issues",
+                "source": "https://github.com/mjaschen/phpgeo/tree/4.2.0"
+            },
+            "time": "2022-07-25T08:36:36+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.3.1",
             "source": {
@@ -2935,6 +3097,70 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "stephenjude/default-model-sorting",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephenjude/default-model-sorting.git",
+                "reference": "0cc98f61563dd4490761a958c756c7a5aec997de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephenjude/default-model-sorting/zipball/0cc98f61563dd4490761a958c756c7a5aec997de",
+                "reference": "0cc98f61563dd4490761a958c756c7a5aec997de",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stephenjude\\DefaultModelSorting\\DefaultModelSortingServiceProvider"
+                    ],
+                    "aliases": {
+                        "DefaultModelSorting": "Stephenjude\\DefaultModelSorting\\DefaultModelSortingFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stephenjude\\DefaultModelSorting\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Jude",
+                    "email": "hello@stephenjude.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add default sorting column to your eloquent model",
+            "homepage": "https://github.com/stephenjude/default-model-sorting",
+            "keywords": [
+                "default-model-sorting",
+                "eloquent",
+                "model",
+                "orderby",
+                "sorting",
+                "stephenjude"
+            ],
+            "support": {
+                "issues": "https://github.com/stephenjude/default-model-sorting/issues",
+                "source": "https://github.com/stephenjude/default-model-sorting/tree/2.1.0"
+            },
+            "time": "2023-02-21T15:52:24+00:00"
         },
         {
             "name": "symfony/console",
