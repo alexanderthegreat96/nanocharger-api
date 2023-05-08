@@ -8,12 +8,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\v1\LocateByCompanyRequest;
 use App\Models\Api\v1\Company;
 use App\Models\Api\v1\Station;
+use Illuminate\Http\JsonResponse;
 
 class LocateByCompanyController extends Controller
 {
     /**
      * @param LocateByCompanyRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * Fetch all given stations within a certain radius\
      * based on company id and it's children
      */
@@ -86,7 +87,7 @@ class LocateByCompanyController extends Controller
 
     /**
      * @param LocateByCompanyRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function locateRaw(LocateByCompanyRequest $request)
     {

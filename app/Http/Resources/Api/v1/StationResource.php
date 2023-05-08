@@ -19,7 +19,7 @@ class StationResource extends JsonResource
             'name' => $this->name,
             'latitude' => $this->latitude,
             'longitude' => $this->longitude,
-            'company' => $this->company->company_name,
+            'company' => $this->company ? $this->company->company_name : 'N/A',
             'address' => $this->address
         ];
     }

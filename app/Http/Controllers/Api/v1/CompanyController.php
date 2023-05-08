@@ -29,7 +29,7 @@ class CompanyController extends Controller
             'parent_company_id' => 0
         ];
 
-        if($request->has('parent_company_id')) {;
+        if($request->has('parent_company_id')) {
             $data['parent_company_id'] = $request->input('parent_company_id');
         }
 
@@ -59,7 +59,7 @@ class CompanyController extends Controller
             $data['company_name']  = $request->input('company_name');
         }
 
-        if($request->has('parent_company_id')) {;
+        if($request->has('parent_company_id')) {
             $data['parent_company_id'] = $request->input('parent_company_id');
         }
 
@@ -74,9 +74,6 @@ class CompanyController extends Controller
     public function destroy(Company $company)
     {
         $company->delete();
-        return response()->json([
-            'status' => true,
-            'message' => 'Company was deleted!'
-        ])->setStatusCode(204);
+        return response(null)->setStatusCode(204);
     }
 }

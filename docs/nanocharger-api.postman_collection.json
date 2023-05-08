@@ -932,8 +932,8 @@
 							"type": "text"
 						},
 						{
-							"key": "email1",
-							"value": "alexander@localhost.com1",
+							"key": "email",
+							"value": "alexander@localhost.com",
 							"type": "text"
 						},
 						{

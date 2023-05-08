@@ -7,12 +7,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\v1\LocateRequest;
 use App\Models\Api\v1\Station;
 use App\Helpers\Math;
+use Illuminate\Http\JsonResponse;
 
 class LocateController extends Controller
 {
     /**
      * @param LocateRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * Find nearest charging stations
      * based on the current coordinates
      */
@@ -29,8 +30,6 @@ class LocateController extends Controller
         if ($request->has('radius')) {
             $radius = $request->radius;
         }
-
-
 
         $stations = Station::closestToThis($lat, $long, $unit, $radius)
             ->with('company')
@@ -68,7 +67,7 @@ class LocateController extends Controller
 
     /**
      * @param LocateRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * Use Raw PHP
      * to Sort Results
      */
@@ -125,7 +124,7 @@ class LocateController extends Controller
 
     /**
      * @param LocateRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function locateGrouped(LocateRequest $request) {
 
@@ -178,7 +177,7 @@ class LocateController extends Controller
 
     /**
      * @param LocateRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
 
     public function locateGroupedRaw(LocateRequest $request)

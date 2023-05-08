@@ -4,6 +4,7 @@ namespace App\Http\Requests\Api\v1\Station;
 
 use App\Rules\Coordinates\LatitudeValidationRule;
 use App\Rules\Coordinates\LongitudeValidationRule;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateStationRequest extends FormRequest
@@ -19,7 +20,7 @@ class UpdateStationRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
+     * @return array<string, ValidationRule|array|string>
      */
     public function rules(): array
     {
